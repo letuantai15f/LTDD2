@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivityT2 extends AppCompatActivity {
     Button button;
     EditText editText,editText2;
+    String admin="admin";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class MainActivityT2 extends AppCompatActivity {
                 if(editText2.getText().length()==0 ||editText.getText().length()==0){
                     Toast.makeText(MainActivityT2.this, "Vui long khong de trong", Toast.LENGTH_SHORT).show();
                 }
-                if(editText.getText().equals("admin") && editText2.getText().equals("admin")){
+                if(editText.getText().equals(admin) && editText2.getText().equals(admin)){
                     Toast.makeText(MainActivityT2.this, "Login thanh cong", Toast.LENGTH_SHORT).show();
                 }
                 else Toast.makeText(MainActivityT2.this, "Thong tin khong dung", Toast.LENGTH_SHORT).show();
