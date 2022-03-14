@@ -90,9 +90,11 @@
 
             <TextView
                 android:id="@+id/textView13"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/gachngang"
                 android:text="141.800 đ" />
+
 
         </LinearLayout>
 
@@ -284,7 +286,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/dathang"
             android:layout_width="310dp"
             android:layout_height="64dp"
             android:layout_marginTop="56dp"
