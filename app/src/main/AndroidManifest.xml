@@ -10,10 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".baitap5b"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
-
-        <activity android:name=".Main_CustomList">
+        <activity android:name=".BaiTap5">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/drawable/bg.xml" value="0.2115" />
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/drawable/vien.xml" value="0.2115" />
+        <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/activity_bai_tap5.xml" value="0.14" />
+        <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/activity_baitap5b.xml" value="0.2" />
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/activity_lap3.xml" value="0.25" />
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/activity_list_view.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/activity_main.xml" value="0.2" />
@@ -12,6 +14,7 @@
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/activity_main_list_view.xml" value="0.11875" />
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/activity_main_t2.xml" value="0.2" />
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/gachngang.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/item_cake.xml" value="0.19293478260869565" />
         <entry key="..\:/Users/Tai/Desktop/LTDD2/app/src/main/res/layout/item_list.xml" value="0.33" />
       </map>
     </option>

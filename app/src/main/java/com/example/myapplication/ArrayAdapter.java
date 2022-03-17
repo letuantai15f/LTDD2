@@ -13,13 +13,13 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class ArrayAdapter extends android.widget.ArrayAdapter <items>  {
+public class ArrayAdapter extends android.widget.ArrayAdapter<items> {
     private Context context;
     private int resource;
     private ArrayList<items> itemsArrayList;
 
 
-    public ArrayAdapter(    Context context, int resource,  ArrayList<items> objects) {
+    public ArrayAdapter(Context context, int resource, ArrayList<items> objects) {
         super(context, resource, objects);
         this.context=context;
         this.resource=resource;
