@@ -10,18 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".baitap5b"
+            android:name=".BaitapGK2S2"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity android:name=".BaiTap5">
+        <activity android:name=".BaiTapGK">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BaiTap5" />
+        <activity android:name=".baitap5b"/>
     </application>
 
 </manifest>

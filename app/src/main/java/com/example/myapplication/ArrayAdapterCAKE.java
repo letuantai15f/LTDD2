@@ -24,6 +24,7 @@ public class ArrayAdapterCAKE extends ArrayAdapter<itemsCake> {
     private Context context;
     private int resource;
     private ArrayList<itemsCake> itemsArrayList;
+    private ArrayList<itemsCake> filerar;
 
 
     public ArrayAdapterCAKE(Context context, int resource, ArrayList<itemsCake> objects) {
@@ -32,6 +33,15 @@ public class ArrayAdapterCAKE extends ArrayAdapter<itemsCake> {
         this.resource = resource;
         this.itemsArrayList = objects;
     }
+
+    public   void filterten(ArrayList ten){
+        itemsArrayList=ten;
+        notifyDataSetChanged();
+    }
+
+
+
+
 
     public  void filterList(ArrayList<itemsCake> filter) {
         itemsArrayList=filter;
@@ -80,6 +90,5 @@ public class ArrayAdapterCAKE extends ArrayAdapter<itemsCake> {
         intent.putExtras(bundle);
         context.startActivity(intent);
     }
-
 
 }

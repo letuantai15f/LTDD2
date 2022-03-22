@@ -3,6 +3,8 @@ package com.example.myapplication;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -13,8 +15,10 @@ import java.util.ArrayList;
 public class BaiTap5 extends AppCompatActivity {
     private ListView listView;
     private ArrayList<itemsCake> itemsArrayList;
+
     private ArrayAdapterCAKE arrayAdapter;
 
+    Button btnpink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,14 +54,28 @@ public class BaiTap5 extends AppCompatActivity {
         int tasy= R.drawable.donutmot;
         int yellow=R.drawable.donutyellow;
         int green=R.drawable.greendonut;
-        itemsCake donutmot=new itemsCake(tasy,"Tasty Donut","Spicy tasty donut family","$10.00");
+        itemsCake donutmot=new itemsCake(tasy,"Pink Donut","Spicy tasty donut family","$10.00");
         itemsCake donut2=new itemsCake(yellow,"Yellow Donut","Spicy tasty donut family","$20.00");
         itemsCake donut3=new itemsCake(green,"Green Donut","Spicy tasty donut family","$30.00");
         itemsArrayList.add(donutmot);
         itemsArrayList.add(donut2);
         itemsArrayList.add(donut3);
+        btnpink=findViewById(R.id.btnpink);
          arrayAdapter=  new ArrayAdapterCAKE(this,R.layout.item_list,itemsArrayList);
         listView.setAdapter(arrayAdapter);
+        btnpink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ArrayList<itemsCake> ar2=new ArrayList<>();
+               for(itemsCake itemsCake : itemsArrayList){
+                   if(itemsCake.getTen().equals("Pink Donut"))
+                       ar2.add(itemsCake);
+               }
+                arrayAdapter.filterten(ar2);
+            }
+        });
+
+
 
     }
 
